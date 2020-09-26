@@ -27,11 +27,7 @@ app.get('/', homeController)
 app.post('/search', searchController)
 
 app.get('/customers/:id', showCustomerController)
-    
-    
 
-
-
-
+// Listen the port for the app
 
 app.listen(port)
