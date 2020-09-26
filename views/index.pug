@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        link(rel="stylesheet" href="/css/styles.css" type="text/css")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        title= title
+    body
+        .container.flex
+            form(action='/search', method='post')
+                input#search(type="text" name="name" placeholder="Search here")
+                input#submit(type='submit', value='Search')
+        
+        .container
+            if result
+            br
+            h1 #{result} 
+            
+            if clients
+                
+                each object in clients
+                    br
+                    p 
+                        a(href=`/customers/${object._id}`) #{object.name} 
+                        br
+                        | #{object.address}
+                        br
+                        | Phone: #{object.phone}
+        script(src='/js/functions.js')

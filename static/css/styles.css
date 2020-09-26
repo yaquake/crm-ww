@@ -1,0 +1,38 @@
+
+.container {
+    
+    width: 80vw;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#search {
+    border: 2px solid grey;
+    border-radius: 30px;
+    margin-top: 100px;
+    width: 1000px;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 1.2em;
+    
+}
+
+#search:focus {
+    outline: none;
+    
+    border-color: rgb(196, 196, 250);
+}
+#submit {
+    border: 2px solid grey;
+    border-radius: 30px;
+    height: 60px;
+    margin-left: 20px;
+    font-size: 1.2em;
+    background-color: white;
+    width: 160px;
+}
