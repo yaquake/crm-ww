@@ -4,7 +4,7 @@ const path = require('path')
 
 const bodyParser = require('body-parser')
 
-const queries = require('./queries')
+//const queries = require('./queries')
 
 const app = express()
 const connection = require('./connection')

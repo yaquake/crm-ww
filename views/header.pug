@@ -1,0 +1,14 @@
+doctype html
+html
+	head
+		link(rel="stylesheet" href="/css/styles.css" type="text/css")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+		title= title
+	body
+		.container(style="text-align: center;")
+
+			img(src="/pics/ww.png")
+		.container.flex
+			form(action='/search', method='post')
+				input#search(type="text" name="customerName" placeholder="Search here")
+
