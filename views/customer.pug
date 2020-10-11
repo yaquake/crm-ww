@@ -1,3 +1,17 @@
 include index.pug
 .container.flex
-	h1 #{client.name}
+	nav
+		ul.menu
+			li.logo
+				a(href='#') #{client.name} 
+			li.item
+				a(href='#') Home
+			li.item
+				a(href='#') Services 
+			li.item
+				a(href='#') Quotes
+			li.item
+				a(tabindex='0') Services
+				ul.submenu
+					li.subitem
+						a(href='#') Design

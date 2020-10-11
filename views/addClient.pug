@@ -1,0 +1,14 @@
+include header.pug
+.container.flex
+	form(id="register", action='/clients/register', method='POST')
+		input(type='text', name='name', value='', placeholder='Full name')
+		br
+		input(type='text', name='address', value='', placeholder='Address')
+		br
+		input(type='text', name='phone', value='', placeholder='Phone')
+		br
+		input(type='text', name='email', value='', placeholder='Email')
+		br
+		input(type='text', name='quotes', value='', placeholder='Quotes')
+		br
+		input(type='Submit')
